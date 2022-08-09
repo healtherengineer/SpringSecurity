@@ -19,4 +19,8 @@ public class UserController {
         return "Log in oldunuz Dashboard a hoşgeldiniz .";
     }
 
+    @GetMapping("/admin")
+    public String admin(){
+        return "Log in oldunuz ADMIN sayfasına hoşgeldiniz .";
+    }
 }
