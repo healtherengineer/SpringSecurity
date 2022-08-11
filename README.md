@@ -1,4 +1,4 @@
-# SpringSecurity
+# Spring Security
 
 ### TO-DO
 <div style="color=green"> 
