@@ -1,7 +1,18 @@
 # SpringSecurity
 
 ### TO-DO
--->Basic security configuration </br>
+<div style="color:green"> 
+-->Basic security configuration 
+</div>
+<div style="color:yellow"> 
 -->Add thymleaf library for frontend
--->Add Social sign-in with Facebook
--->Add Social sign-in with Google
+</div>
+<div style="color:yellow"> 
+-->Add Social sign-in with Facebook 
+</div>
+<div style="color:yellow"> 
+-->Add Social sign-in with Google 
+</div>
+
+
+
