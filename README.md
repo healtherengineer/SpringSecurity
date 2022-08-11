@@ -1,7 +1,7 @@
 # SpringSecurity
 
 ### TO-DO
-<div style="color:green"> 
+<div style="color=green"> 
 -->Basic security configuration 
 </div>
 <div style="color:yellow"> 
