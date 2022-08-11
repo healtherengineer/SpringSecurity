@@ -2,16 +2,16 @@
 
 ### TO-DO
 <div style="color=green"> 
--->Basic security configuration 
+#Basic security configuration 
 </div>
 <div style="color:yellow"> 
--->Add thymleaf library for frontend
+#Add thymleaf library for frontend
 </div>
 <div style="color:yellow"> 
--->Add Social sign-in with Facebook 
+#Add Social sign-in with Facebook 
 </div>
 <div style="color:yellow"> 
--->Add Social sign-in with Google 
+#Add Social sign-in with Google 
 </div>
 
 
