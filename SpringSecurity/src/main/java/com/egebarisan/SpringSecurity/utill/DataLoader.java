@@ -31,14 +31,14 @@ public class DataLoader implements ApplicationRunner {
         List<Role> adminRoleList = new ArrayList<>();
         adminRoleList.add(roleAdmin);
 
-        User admin = User.builder().id(1L).username("Ege").password("12345D").roleList(adminRoleList).build();
+        User admin = User.builder().id(1L).username("Ege").password("12345").roleList(adminRoleList).build();
         userRepository.save(admin);
 
 
         List<Role> userRoleList = new ArrayList<>();
         userRoleList.add(roleUser);
 
-        User user1 = User.builder().id(2L).username("Dilara").password("78945E").roleList(userRoleList).build();
+        User user1 = User.builder().id(2L).username("Dilara").password("123").roleList(userRoleList).build();
         userRepository.save(user1);
 
         System.out.println("----ROLES---------");

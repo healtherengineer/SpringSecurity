@@ -8,8 +8,11 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 @EnableWebSecurity
 @Configuration
@@ -27,8 +30,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.httpBasic();
         http.formLogin();
 
-        http.authorizeHttpRequests().antMatchers("/dashboard").hasAnyRole("ROLE_ADMIN", "ROLE_USER")
-                .antMatchers("/admin").hasRole("ROLE_ADMIN")
+        http.authorizeHttpRequests().antMatchers("/dashboard").hasAnyRole("ADMIN", "USER")
+                .antMatchers("/admin").hasRole("ADMIN")
                 .and()
                 .authorizeHttpRequests().antMatchers("/index")
                 .permitAll();
@@ -44,5 +47,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         auth.userDetailsService(userDetailsService);
 
+    }
+    @Bean
+    public static NoOpPasswordEncoder passwordEncoder() {
+        return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
     }
 }
