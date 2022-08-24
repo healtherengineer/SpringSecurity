@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 
 public class CustomUserDetail implements UserDetails {
 
+    //burda bir dto oluşturabilirdik kirapratik mimarisinde bi dto ile işlem yapıyoruz güvenlik açısından
+    //nesnelere attribute düzeyinde erişim sağlıyor .
     private String name;
     private String password;
     private List<GrantedAuthority> roleList;

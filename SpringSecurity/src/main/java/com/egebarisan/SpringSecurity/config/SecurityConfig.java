@@ -45,6 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //                .withUser("Dilara").password("{noop}789456").roles("standard");
 
 
+        //esas işi yapan kısım diyebiliriz . Bu service e göre kimlik doğrulama yap
         auth.userDetailsService(userDetailsService);
 
     }
