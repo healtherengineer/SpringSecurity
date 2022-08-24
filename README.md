@@ -4,6 +4,9 @@
 <div style="color=green"> 
 #Basic security configuration 
 </div>
+<div style="color=green"> 
+#JSON WEB TOKEN
+</div>
 <div style="color:yellow"> 
 #Add thymleaf library for frontend
 </div>
