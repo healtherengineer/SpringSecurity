@@ -4,6 +4,10 @@
 <div style="color=green"> 
 #Basic security configuration 
 </div>
+</div>
+<div style="color=green"> 
+#Spring Security without WebSecurityConfigurerAdapter (New 2022)
+</div>
 <div style="color=green"> 
 #JSON WEB TOKEN
 </div>
